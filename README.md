@@ -1,4 +1,3 @@
-![Rentcars](https://static.rentcars.com/imagens/rentcars-com.svg)
 # Micro-serviço cotação
 
 
