@@ -1,0 +1,46 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Um micro-serviço para acesso as cotações de moedas do dia anterior.",
+    "version": "1.0.0",
+    "title": "Cotação de Moedas"
+  },
+  "host": "localhost:3030",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "cotacao",
+      "description": "Cotação de moeda valor de fechamento do dia anterior."
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/cotacao": {
+      "get": {
+        "tags": [
+          "cotacao"
+        ],
+        "summary": "Consulta o valor da cotação da moeda no dia anterior.",
+        "description": "",
+        "operationId": "getCotacao",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Retorno válido"
+          },
+          "500": {
+            "description": "Erro ao fazer requisição."
+          }
+        }
+      }
+    }
+  }
+}

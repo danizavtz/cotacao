@@ -1,0 +1,18 @@
+# package directories
+node_modules
+jspm_packages
+dist
+
+# Serverless directories
+.serverless
+
+# files
+.env
+package-lock.json
+
+documentation/
+.nyc_output/
+
+newrelic_agent.log
+
+.idea

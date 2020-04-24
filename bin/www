@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+const app = require('../app')
+try {
+  app.listen(process.env.PORT || 3030, process.env.IPHOSTAPPLICATION || 'localhost')
+  console.log(`Micro-serviço cotação executando em http://${process.env.IPHOSTAPPLICATION || 'localhost'}:${process.env.PORT || 3030}`)
+} catch (e) {
+  throw e
+}
