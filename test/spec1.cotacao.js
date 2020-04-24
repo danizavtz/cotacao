@@ -13,6 +13,7 @@ describe('#COTAÇÃO', () => {
     describe('GET', () => {
         it('cotacao should return with success with default response', (done) => {
             const parsedContent = JSON.parse(content)
+            //nock mocka a chamada ao endpoint: https://openexchangerates.org/api/latest.json?app_id=<OPENEXCHANGEAPITOKEN>
             nock('https://openexchangerates.org/api/')
             .get(`/latest.json?app_id=${process.env.OPENEXCHANGEAPITOKEN}`)
             .reply(200, parsedContent)
@@ -34,6 +35,7 @@ describe('#COTAÇÃO', () => {
             })
         });
         it('Index should return default error if fallback fail', (done) => {
+            //nock mocka a chamada ao endpoint, dessa vez retornando o erro 500: https://openexchangerates.org/api/latest.json?app_id=<OPENEXCHANGEAPITOKEN>
             nock('https://openexchangerates.org/api/')
             .get(`/latest.json?app_id=${process.env.OPENEXCHANGEAPITOKEN}`)
             .replyWithError({
