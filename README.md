@@ -21,3 +21,8 @@
 2. cp env-sample .env
 3. npm run dev
 4. Você deverá ver a mensagem `Micro-serviço cotação executando em http://0.0.0.0:3030`
+
+## Para acessar o microservico
+1. configurar open api exchange key
+2. cp env-sample .env
+3. adicionar o seu api exchange key no .env
