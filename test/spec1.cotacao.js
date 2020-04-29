@@ -27,7 +27,7 @@ describe('#COTAÇÃO', () => {
                 expect(res.body).to.have.property('license')
                 expect(res.body.license).equal('https://openexchangerates.org/license')
                 expect(res.body).to.have.property('timestamp')
-                expect(res.body.timestamp).equal(1584540000)
+                expect(res.body.timestamp).not.equal(null)
                 expect(res.body).to.have.property('base')
                 expect(res.body.base).equal('USD')
                 expect(res.body).to.have.property('rates')
