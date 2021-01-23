@@ -28,3 +28,12 @@ jobs:
     - run: npm test
       env:
          OPENEXCHANGEAPITOKEN: ${{ secrets.OPENEXCHANGEAPITOKEN }}
+         PORT: 3000
+         IPHOSTAPPLICATION: 0.0.0.0
+    - run: npm run coverage
+      env:
+         OPENEXCHANGEAPITOKEN: ${{ secrets.OPENEXCHANGEAPITOKEN }}
+         PORT: 3000
+         IPHOSTAPPLICATION: 0.0.0.0
+         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+    - run: npm i -g codecov && npm run coverage:report && codecov -t ${{ secrets.CODECOV_TOKEN }}

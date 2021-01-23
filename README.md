@@ -1,5 +1,6 @@
 # Micro-serviço cotação
 ![Node.js CI](https://github.com/danizavtz/cotacao/workflows/Node.js%20CI/badge.svg)
+[![codecov](https://codecov.io/gh/danizavtz/cotacao/branch/master/graph/badge.svg?token=V495GMJKUG)](https://codecov.io/gh/danizavtz/cotacao)
 
 ## Instruções para executar:
 1. executar `npm install`
