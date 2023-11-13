@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node bin/www",
-    "dev": "nodemon bin/www",
+    "dev": "node --watch bin/www",
     "lint": "./node_modules/.bin/eslint ./server/**/*.js",
     "test": "mocha --reporter spec test/ --exit",
     "coverage": "nyc mocha --exit --reporter progress ./test/",
@@ -28,7 +28,6 @@
     "eslint": "^8.49.0",
     "mocha": "^10.2.0",
     "nock": "^13.3.3",
-    "nodemon": "^3.0.1",
     "nyc": "^15.1.0",
     "supertest": "^6.3.3"
   }
